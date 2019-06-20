@@ -7,7 +7,12 @@
         mc:Ignorable="d"
         d:DataContext="{d:DesignInstance {x:Type local:MainWindowViewModel}, IsDesignTimeCreatable=True}"
         Title="MainWindow" Height="450" Width="800">
+        <!-- d:DataContextはVisualStudio側のプレビュー表示につかうだけ、無視しておｋ -->
     <Grid>
+        <!--
+         {Binding *}とされている部分がViewModel内のプロパティの値と紐付けられているところ
+         MainWindowViewModelとの紐づけはMainWindow.xaml.cs側で行っている
+          -->
         <TextBlock 
             HorizontalAlignment="Left"
             Margin="10,10,0,0"

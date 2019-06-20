@@ -24,6 +24,8 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
+            //DataContextにViewModelクラスを代入することで、xaml側でのBindingが有効になる
+            //今回はC#側で記述しているけれども、xaml側でDataContextにViewModelクラスを代入することもできる
             this.DataContext = new MainWindowViewModel();
         }
     }
